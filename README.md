@@ -1,4 +1,3 @@
-
 Gumby2 Backbone Bootstrap
 
 =========================
@@ -7,7 +6,7 @@ I have created a new repo which combines Gumby2 CSS Framework with Backbone.js.
 
 Why Gumby2?
 
-  * Gumby2 has awesome touch event support.
+	* Gumby2 has awesome touch event support.
 	* Gumby2 is powered by SASS.
 	* more -> 
 
