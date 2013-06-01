@@ -4,6 +4,8 @@ Gumby2 Backbone Bootstrap
 
 I have created a new repo which combines Gumby2 CSS Framework with Backbone.js.
 
+<a href="http://jquery4u.com/demos/gumby2-backbone-bootstrap/">Barebones Demo</a>
+
 Why Gumby2?
 
 	* Gumby2 has awesome touch event support.
