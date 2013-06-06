@@ -3,7 +3,8 @@ window.Router = Backbone.Router.extend({
     routes: {
         "": "home",
         "login": "login",
-        "register": "register"
+        "register": "register",
+        "testing": "testing"
     },
 
     cache: {},
@@ -30,7 +31,7 @@ window.Router = Backbone.Router.extend({
             this.loginView = new LoginView();
             this.loginView.render();
         } else {
-            this.homeView.delegateEvents();
+            this.loginView.delegateEvents();
         }
         this.cache.container.html(this.loginView.el);
         this.initHeader();
@@ -42,9 +43,21 @@ window.Router = Backbone.Router.extend({
             this.registerView = new RegisterView();
             this.registerView.render();
         } else {
-            this.homeView.delegateEvents();
+            this.registerView.delegateEvents();
         }
         this.cache.container.html(this.registerView.el);
+        this.initHeader();
+        this.initFooter();
+    },
+
+    testing: function () {
+        if (!this.testingView) {
+            this.testingView = new TestingView();
+            this.testingView.render();
+        } else {
+            this.testingView.delegateEvents();
+        }
+        this.cache.container.html(this.testingView.el);
         this.initHeader();
         this.initFooter();
     },
@@ -52,14 +65,23 @@ window.Router = Backbone.Router.extend({
     /* ------------ HELPERS ---------------------------------------------------------- */
 
     initHeader: function () {
-        this.headerView = new HeaderView();
-        this.headerView.render();
+        if (!this.headerView) {
+            this.headerView = new HeaderView();
+            this.headerView.render();
+        } else {
+            this.headerView.delegateEvents();
+        }
         this.cache.container.prepend(this.headerView.el);
+        window.WEBAPP.HEADER.init();
     },
 
     initFooter: function () {
-        this.footerView = new FooterView();
-        this.footerView.render();
+        if (!this.footerView) {
+            this.footerView = new FooterView();
+            this.footerView.render();
+        } else {
+            this.footerView.delegateEvents();
+        }
         this.cache.container.append(this.footerView.el);
     }
 
@@ -67,7 +89,7 @@ window.Router = Backbone.Router.extend({
 
 /* ------------ LOAD TEMPLATES -------------------------------------------------------- */
 
-templateLoader.load(["HomeView", "LoginView", "RegisterView", "HeaderView", "FooterView"],
+templateLoader.load(["HomeView", "LoginView", "RegisterView", "HeaderView", "FooterView", "TestingView"],
     function () {
         app = new Router();
         Backbone.history.start();

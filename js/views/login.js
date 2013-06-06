@@ -1,7 +1,7 @@
 window.LoginView = Backbone.View.extend({
 
     initialize:function () {
-        console.log('Initializing LoginView View');
+        console.log('Initializing Login View');
     },
 
     render:function () {

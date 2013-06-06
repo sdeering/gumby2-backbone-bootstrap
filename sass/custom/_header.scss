@@ -23,7 +23,17 @@ header {
 
                 .btn {
 
-                    background-color: $primary-hover-color;
+                    &.primary {
+
+                        background-color: $primary-hover-color;
+
+                    }
+
+                    &.secondary {
+
+                        background-color: $secondary-hover-color;
+
+                    }
 
                 }
 

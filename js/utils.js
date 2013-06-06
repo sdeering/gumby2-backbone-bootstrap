@@ -7,8 +7,8 @@ window.templateLoader = {
 
         $.each(views, function(index, view) {
             if (window[view]) {
-                deferreds.push($.get('tpl/' + view + '.html', function(data) {
-                    window[view].prototype.template = _.template(data);
+                deferreds.push($.get('tpl/' + view + '.html', function(tpl) {
+                    window[view].prototype.template = _.template(tpl);
                 }, 'html'));
             } else {
                 console.log(view + " not found");

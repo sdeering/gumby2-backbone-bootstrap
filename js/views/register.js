@@ -1,7 +1,9 @@
 window.RegisterView = Backbone.View.extend({
 
     initialize:function () {
-        console.log('Initializing RegisterView View');
+
+        console.log('Initializing Register View');
+
     },
 
     render:function () {
