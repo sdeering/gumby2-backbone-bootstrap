@@ -6,11 +6,10 @@ window.Router = Backbone.Router.extend({
         "register": "register"
     },
 
+    cache: {},
+
     initialize: function () {
-        // Close the search dropdown on click anywhere in the UI
-        $('body').click(function () {
-            $('.dropdown').removeClass("open");
-        });
+        this.cache.container = $("#main");
     },
 
     home: function () {
@@ -21,21 +20,21 @@ window.Router = Backbone.Router.extend({
         } else {
             this.homeView.delegateEvents(); // delegate events when the view is recycled
         }
-        $("#content").html(this.homeView.el);
+        this.cache.container.html(this.homeView.el);
+        this.initHeader();
+        this.initFooter();
     },
 
     login: function () {
-
-        // this.headerView = new HeaderView();
-        // $('.header').html(this.headerView.render().el);
-
         if (!this.loginView) {
             this.loginView = new LoginView();
             this.loginView.render();
         } else {
-            this.homeView.delegateEvents(); // delegate events when the view is recycled
+            this.homeView.delegateEvents();
         }
-        $('#content').html(this.loginView.el);
+        this.cache.container.html(this.loginView.el);
+        this.initHeader();
+        this.initFooter();
     },
 
     register: function () {
@@ -43,14 +42,32 @@ window.Router = Backbone.Router.extend({
             this.registerView = new RegisterView();
             this.registerView.render();
         } else {
-            this.homeView.delegateEvents(); // delegate events when the view is recycled
+            this.homeView.delegateEvents();
         }
-        $('#content').html(this.registerView.el);
+        this.cache.container.html(this.registerView.el);
+        this.initHeader();
+        this.initFooter();
+    },
+
+    /* ------------ HELPERS ---------------------------------------------------------- */
+
+    initHeader: function () {
+        this.headerView = new HeaderView();
+        this.headerView.render();
+        this.cache.container.prepend(this.headerView.el);
+    },
+
+    initFooter: function () {
+        this.footerView = new FooterView();
+        this.footerView.render();
+        this.cache.container.append(this.footerView.el);
     }
 
 });
 
-templateLoader.load(["HomeView", "LoginView", "RegisterView"],
+/* ------------ LOAD TEMPLATES -------------------------------------------------------- */
+
+templateLoader.load(["HomeView", "LoginView", "RegisterView", "HeaderView", "FooterView"],
     function () {
         app = new Router();
         Backbone.history.start();

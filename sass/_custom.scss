@@ -1,1 +1,24 @@
 // Your custom SCSS should be written here...
+
+/*!
+* Custom CSS
+* ---------------------------
+* This file will get compiled by SASS and imported into /stylesheets/gumby.css
+* Writing style SCSS.
+*/
+
+/* layouts */
+@import "custom/layouts";
+
+/* pages */
+@import "custom/home";
+@import "custom/login";
+@import "custom/register";
+
+/* components */
+
+
+/* applets */
+
+
+/* helpers */

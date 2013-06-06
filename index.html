@@ -24,7 +24,7 @@
 
     <div class="container">
         <div class="row">
-            <div id="content" class="span12"></div>
+            <div id="main" class="span12"></div>
         </div>
     </div>
 
@@ -41,11 +41,28 @@
     <script src="js/views/home.js"></script>
     <script src="js/views/login.js"></script>
     <script src="js/views/register.js"></script>
+    <script src="js/views/header.js"></script>
+    <script src="js/views/footer.js"></script>
     <script src="js/router.js"></script>
 
     <!-- init -->
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-11577561-5']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
 
 </body>
 </html>

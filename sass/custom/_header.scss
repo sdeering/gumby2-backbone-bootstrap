@@ -1,0 +1,36 @@
+
+/*!
+*  _header.scss
+* -----------------------------------
+*/
+
+header {
+
+    margin-bottom: 25px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #DDD;
+
+    ul.nav {
+
+        display: inline-block;
+
+        li {
+
+            float: left;
+            margin-right: 5px;
+
+            &.active {
+
+                .btn {
+
+                    background-color: $primary-hover-color;
+
+                }
+
+            }
+
+        }
+
+    }
+
+}

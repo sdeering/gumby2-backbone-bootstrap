@@ -1,0 +1,59 @@
+/*
+Syntax error: File to import not found or unreadable: modular-scale.
+              Load paths:
+                c:/websites/testing/gumby2-backbone-bootstrap/sass
+                c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/blueprint/stylesheets
+                c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets
+                Compass::SpriteImporter
+        on line 12 of c:/websites/testing/gumby2-backbone-bootstrap/sass/gumby.scss
+
+Backtrace:
+c:/websites/testing/gumby2-backbone-bootstrap/sass/gumby.scss:12
+c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.8/lib/sass/tree/import_node.rb:67:in `rescue in import'
+c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.8/lib/sass/tree/import_node.rb:45:in `import'
+c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.8/lib/sass/tree/import_node.rb:28:in `imported_file'
+c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.8/lib/sass/tree/import_node.rb:37:in `css_import?'
+c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.8/lib/sass/tree/visitors/perform.rb:217:in `visit_import'
+c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.8/lib/sass/tree/visitors/base.rb:37:in `visit'
+c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.8/lib/sass/tree/visitors/perform.rb:100:in `visit'
+c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.8/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
+c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.8/lib/sass/tree/visitors/base.rb:53:in `map'
+c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.8/lib/sass/tree/visitors/base.rb:53:in `visit_children'
+c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.8/lib/sass/tree/visitors/perform.rb:109:in `block in visit_children'
+c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.8/lib/sass/tree/visitors/perform.rb:121:in `with_environment'
+c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.8/lib/sass/tree/visitors/perform.rb:108:in `visit_children'
+c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.8/lib/sass/tree/visitors/base.rb:37:in `block in visit'
+c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.8/lib/sass/tree/visitors/perform.rb:128:in `visit_root'
+c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.8/lib/sass/tree/visitors/base.rb:37:in `visit'
+c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.8/lib/sass/tree/visitors/perform.rb:100:in `visit'
+c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.8/lib/sass/tree/visitors/perform.rb:7:in `visit'
+c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.8/lib/sass/tree/root_node.rb:20:in `render'
+c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.8/lib/sass/engine.rb:315:in `_render'
+c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.8/lib/sass/engine.rb:262:in `render'
+c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.2/lib/compass/compiler.rb:140:in `block (2 levels) in compile'
+c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.2/lib/compass/compiler.rb:126:in `timed'
+c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.2/lib/compass/compiler.rb:139:in `block in compile'
+c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.2/lib/compass/logger.rb:45:in `red'
+c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.2/lib/compass/compiler.rb:138:in `compile'
+c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.2/lib/compass/compiler.rb:118:in `compile_if_required'
+c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.2/lib/compass/compiler.rb:103:in `block (2 levels) in run'
+c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.2/lib/compass/compiler.rb:101:in `each'
+c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.2/lib/compass/compiler.rb:101:in `block in run'
+c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.2/lib/compass/compiler.rb:126:in `timed'
+c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.2/lib/compass/compiler.rb:100:in `run'
+c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.2/lib/compass/commands/watch_project.rb:147:in `recompile'
+c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.2/lib/compass/commands/watch_project.rb:68:in `perform'
+c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.2/lib/compass/commands/base.rb:18:in `execute'
+c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.2/lib/compass/commands/project_base.rb:19:in `execute'
+c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.2/lib/compass/exec/sub_command_ui.rb:43:in `perform!'
+c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.2/lib/compass/exec/sub_command_ui.rb:15:in `run!'
+c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.2/bin/compass:30:in `block in <top (required)>'
+c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.2/bin/compass:44:in `call'
+c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.2/bin/compass:44:in `<top (required)>'
+c:/Ruby200-x64/bin/compass:23:in `load'
+c:/Ruby200-x64/bin/compass:23:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Syntax error: File to import not found or unreadable: modular-scale.\A               Load paths:\A                 c:/websites/testing/gumby2-backbone-bootstrap/sass\A                 c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/blueprint/stylesheets\A                 c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets\A                 Compass::SpriteImporter\A         on line 12 of c:/websites/testing/gumby2-backbone-bootstrap/sass/gumby.scss"; }
