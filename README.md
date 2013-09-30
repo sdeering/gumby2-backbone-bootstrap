@@ -2,6 +2,8 @@ Gumby2 Backbone Bootstrap
 
 =========================
 
+** UPDATE SEP 2013 - SEE VERSION 2: https://github.com/sdeering/gumby2-backbone-bootstrap-v2 **
+
 I have created a new repo which combines Gumby2 CSS Framework with Backbone.js.
 
 <a href="http://jquery4u.com/demos/gumby2-backbone-bootstrap/">Barebones Demo</a>
